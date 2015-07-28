@@ -57,14 +57,14 @@ Study Factor Type	""
 Study Factor Type Term Accession Number	""
 Study Factor Type Term Source REF	""
 STUDY ASSAYS
-Study Assay File Name	"a_STUDY_ID_LOWER_Visualization_and_Representation_Metabolic_network_representation.txt"	"a_STUDY_ID_LOWER_Classification_with_Formal_Concepts_FCA_for_proteins.txt"
-Study Assay Measurement Type	"Visualization and Representation"	"Classification with Formal Concepts"
-Study Assay Measurement Type Term Accession Number	""	""
-Study Assay Measurement Type Term Source REF	""	""
-Study Assay Technology Type	"Metabolic network representation"	"FCA_for_proteins"
-Study Assay Technology Type Term Accession Number	""	""
-Study Assay Technology Type Term Source REF	""	""
-Study Assay Technology Platform	""	""
+Study Assay File Name	ASSAYS_FILES
+Study Assay Measurement Type	ASSAYS_TYPE
+Study Assay Measurement Type Term Accession Number	ASSAYS_NODATA
+Study Assay Measurement Type Term Source REF	ASSAYS_NODATA
+Study Assay Technology Type	ASSAYS_TECH
+Study Assay Technology Type Term Accession Number	ASSAYS_NODATA
+Study Assay Technology Type Term Source REF	ASSAYS_NODATA
+Study Assay Technology Platform	ASSAYS_NODATA
 STUDY PROTOCOLS
 Study Protocol Name	"sample collection"	"in silico"
 Study Protocol Type	"sample collection"	"in silico"
@@ -81,14 +81,14 @@ Study Protocol Components Type	""	""
 Study Protocol Components Type Term Accession Number	""	""
 Study Protocol Components Type Term Source REF	""	""
 STUDY CONTACTS
-Study Person Last Name	CONTACT_LAST
-Study Person First Name	CONTACT_FIRST
-Study Person Mid Initials	CONTACT_MID
-Study Person Email	CONTACT_MAILS
+Study Person Last Name	CONTACT_LASTNAME
+Study Person First Name	CONTACT_FIRSTNAME
+Study Person Mid Initials	CONTACT_MIDINITIALS
+Study Person Email	CONTACT_EMAIL
 Study Person Phone	CONTACT_PHONE
 Study Person Fax	CONTACT_FAX
 Study Person Address	CONTACT_ADRESS
-Study Person Affiliation	CONTACT_AFF
+Study Person Affiliation	CONTACT_AFFILIATION
 Study Person Roles	""	""
 Study Person Roles Term Accession Number	""	""
 Study Person Roles Term Source REF	""	""

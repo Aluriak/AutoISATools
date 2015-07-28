@@ -13,6 +13,11 @@ options:
     --output-dir=FILE               Path to ISA_metadata/isatab_files
     --contacts-file=FILE            CSV contacts file (see README for format)
     --pydio-url=STR                 URL of the data in Pydio
+    --tool=STR                      Used tools
+    --tool-version=STR              Versions used
+    --tool-description=STR          Comments, addendum,…
+    --assays-type=STR[,STR]         Assays type (one per assay)
+    --assays-tech=STR[,STR]         Assays techno (one per assay)
 
 
 """
@@ -50,13 +55,17 @@ def create_isa_data(payload):
     maindir = os.path.join(payload['OUTPUT_DIR'], payload['STUDY_SHORTNAME'])
     os.mkdir(maindir)
     for filename in os.listdir(utils.DIR_TEMPLATES):
+        if 'ASSAY_NAME' in filename: continue  # avoid keeping the model of assays files
         pre_filename  = os.path.join(utils.DIR_TEMPLATES, filename)
         post_filename = os.path.join(maindir, postprocess(payload, filename))
         # exit()
-        print('FILES:', pre_filename, post_filename)
         with open(pre_filename) as fi, open(post_filename, 'w') as fo:
             [fo.write(postprocess(payload, line)) for line in fi]
-
+    # remove intermediate template files
+    for filename in os.listdir(utils.DIR_TEMPLATES):
+        if filename.startswith('a_'):
+            if filename != 'a_STUDY_LOWID_ASSAY_NAME.txt':
+                os.remove(os.path.join(utils.DIR_TEMPLATES, filename))
 
 
 

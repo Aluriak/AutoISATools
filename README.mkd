@@ -35,3 +35,20 @@ Taxons names and others database fields are not supported.
 You will need to put them manually.
 
 
+## Assays names :
+It's the hard part.
+You can find all the possible assays (defined by Dyliss) [here](https://www.e-biogenouest.org/groups/dyliss/wiki/ProcedureStockage) (you will need to scroll a little).
+But these data can't be directly used easily : some formatting is necessary.
+
+The only solution, at this moment, is to know exactly what they are by starts ISATools, create an assay, and look at the file name *a_STUDY_LOWID_ASSAY_NAME_ASSAY_TECH.txt*.
+
+These assays names are necessary for file integrity.
+
+Knowns valid names are:
+- Visualization_and_Representation;
+- Classification_with_Formal_Concepts;
+
+Knows valid techno are:
+- FCA_for_proteins;
+- Metabolic_network_representation;
+
