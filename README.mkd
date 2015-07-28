@@ -1,0 +1,37 @@
+# AutoISATools
+This is a way to automatize creation of simple ISATools data, while using the INRIA-Dyliss configuration.
+(see links above)
+
+Written in Python, AutoISATools can't replace the GUI, but can speed up the creation of new ISAtab files.
+After using AutoISATools, you will need to start ISATools for the tabfile verification,
+for choose the taxons and defines particular fields (cf Unsupported data), and finally create the ISArchive.
+
+
+
+## Usage
+The best way for use this script is probably the command line:
+
+    python3 -m autoisatools --study-shortname="ANameYouWillRecognize" --study-name="A very very long title" --study-id="AnUniqueIDWithoutSpace" --description="A very long description of the study" --output-dir=/path/to/ISA_metadata/isatab_files" --contacts-file=/path/to/contacts.csv --pydio-url="http://emme.genouest.org/pydio/ws-dyliss/Escherichia%20coli/GraphCompression"
+
+While all these informations are necessary, AutoISATools keep for itself the right to crash if an information is not given correctly.  
+And crash happens. (because this script deals directly with userland)
+
+The *Makefile* is a quick way to edit your command.
+
+
+## Contacts file
+The contact file is a CSV file formatted as (header is NOT optional):
+
+    lastname,firstname,midinitials,email,phone,fax,adress,affiliation
+    michel,vaillant,J.R,michel.vaillant@wanadold.fr,0601020304,4201020304,42 rue des abribus volants 12089 Champagne en Grasfond,INRIA
+    gerard,morson,,superGG@wanadold.fr,060109347504,428320304,23 über straße,IRISA
+
+Note that the role is a particular field that is not managed by AutoISATools (cf Unsupported data).
+
+
+
+## Unsupported data
+Taxons names and others database fields are not supported.
+You will need to put them manually.
+
+

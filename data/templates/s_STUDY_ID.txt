@@ -1,0 +1,2 @@
+"Source Name"	"Characteristics[organism]"	"Term Source REF"	"Term Accession Number"	"Protocol REF"	"Sample Name"
+"STUDY_ID_src_1"	""	"NCBITAXON"	""	"sample collection"	"STUDY_ID_src_1_sample_1"
