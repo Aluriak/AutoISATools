@@ -1,2 +1,2 @@
 "Sample Name"	"Assay Name"	"Raw Data File"	"Protocol REF"	"Parameter Value[tool]"	"Parameter Value[tool version]"	"Parameter Value[tool description]"	"Parameter Value[scripts]"	"Derived Data File"
-"STUDY_ID_src_1_sample_1"	"STUDY_ID_src_1_sample_1_assay_2"	"PYDIO_URL"	"in silico"	"TOOL"	"TOOL_VERSION"	"TOOL_DESCRIPTION"	"PYDIO_URL"	"PYDIO_URL"
+"STUDY_ID_src_1_sample_1"	"STUDY_ID_src_1_sample_1_assay_1"	"PYDIO_URL"	"in silico"	"TOOL_NAME"	"TOOL_VERSION"	"TOOL_DESCRIPTION"	"PYDIO_URL"	"PYDIO_URL"

@@ -80,6 +80,14 @@ def parse(args, docstring):
     )
     options['--assays-files'] = '\t'.join(assay_files).replace(
         'STUDY_LOWID', options['--study-lowid'])
+    # get the assays subdata with space instead of underscore
+    options['--assays-tech'] = options['--assays-tech'].replace('_', ' ')
+    options['--assays-type'] = options['--assays-type'].replace('_', ' ')
+    # take count of exceptions
+    options['--assays-tech'] = '\t'.join(
+        utils.special_cases_assay_tech(name)
+        for name in options['--assays-tech'].split('\t')
+    )
     # the output dir can be given with(out) the 'ISA_metadata/isatab_files',
     #  and with(out) the final '/'.
     options['--output-dir'] = options['--output-dir'].rstrip('/')

@@ -9,11 +9,11 @@ options:
     --study-shortname=STR           Name of the study, only alphanumeric
     --study-name=STR                Detailed name of the study
     --study-id=STR                  Unique ID (no space, alphanumeric)
-    --description=STR               Detailed description
+    --study-description=STR         Detailed description
     --output-dir=FILE               Path to ISA_metadata/isatab_files
     --contacts-file=FILE            CSV contacts file (see README for format)
     --pydio-url=STR                 URL of the data in Pydio
-    --tool=STR                      Used tools
+    --tool-name=STR                 Used tools
     --tool-version=STR              Versions used
     --tool-description=STR          Comments, addendum,…
     --assays-type=STR[,STR]         Assays type (one per assay)
