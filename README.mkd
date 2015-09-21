@@ -52,3 +52,4 @@ Knows valid techno are:
 - FCA_for_proteins;
 - Metabolic_network_representation;
 
+Please Pull Request for keep this list up to date (and complete).
