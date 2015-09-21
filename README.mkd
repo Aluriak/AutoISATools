@@ -32,7 +32,7 @@ Note that the role is a particular field that is not managed by AutoISATools (cf
 
 ## Unsupported data
 Taxons names and others database fields are not supported.
-You will need to put them manually.
+You will need to put them manually, via the graphical program ISATools.
 
 
 ## Assays names :
