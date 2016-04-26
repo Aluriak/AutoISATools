@@ -1,6 +1,5 @@
 # AutoISATools
-This is a way to automatize creation of simple ISATools data, while using the INRIA-Dyliss configuration.
-(see links above)
+This is a way to automatize creation of simple ISATools data, while using the [INRIA-Dyliss configuration](https://www.e-biogenouest.org/groups/dyliss/wiki).
 
 Written in Python, AutoISATools can't replace the GUI, but can speed up the creation of new ISAtab files.
 After using AutoISATools, you will need to start ISATools for the tabfile verification,
@@ -37,19 +36,19 @@ You will need to put them manually, via the graphical program ISATools.
 
 ## Assays names :
 It's the hard part.
-You can find all the possible assays (defined by Dyliss) [here](https://www.e-biogenouest.org/groups/dyliss/wiki/ProcedureStockage) (you will need to scroll a little).
+Maybe you will find some of the possible assays (defined by Dyliss) [here](https://www.e-biogenouest.org/groups/dyliss/wiki).
 But these data can't be directly used easily : some formatting is necessary.
 
-The only solution, at this moment, is to know exactly what they are by starts ISATools, create an assay, and look at the file name *a_STUDY_LOWID_ASSAY_NAME_ASSAY_TECH.txt*.
+The only solution, at this moment, is to know exactly what they are by starts ISATools, create an assay, and look at the file named *a_STUDY_LOWID_ASSAY_NAME_ASSAY_TECH.txt*.
 
 These assays names are necessary for file integrity.
 
-Knowns valid names are:
+Knowns valid assay names are:
 - Visualization_and_Representation;
 - Classification_with_Formal_Concepts;
 
-Knows valid techno are:
+Knows valid assay techno are:
 - FCA_for_proteins;
 - Metabolic_network_representation;
 
-Please Pull Request for keep this list up to date (and complete).
+Please fell free to Pull Request for keep this list up to date (and complete).
